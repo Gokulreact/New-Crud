@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React from 'react';
+import Header from './components/Header/Header';
+import AddCategory from './components/Add/AddCategory';
+import AddSubCategory from './components/AddSubCategory.jsx';
+import DataList from './components/Data View/DataList';
 import './App.css';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Header />
+      
+      <AddCategory/>
+     {/*<AddSubCategory/>*/} 
+      <DataList/>
+     
+      </div>
   );
 }
 
